@@ -1,7 +1,6 @@
 package com.senai.edielsonmariano.aluguel_veiculo.entity;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
 
 @Entity

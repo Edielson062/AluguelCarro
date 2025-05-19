@@ -25,10 +25,6 @@ public class Veiculo {
     @Column(name = "status", nullable = false)
     private Boolean status;
 
-    @OneToMany
-    @JsonIgnore
-    private List<Aluguel> aluguel;
-
     public Veiculo() {
     }
 
@@ -80,11 +76,4 @@ public class Veiculo {
         this.status = status;
     }
 
-    public List<Aluguel> getAluguel() {
-        return aluguel;
-    }
-
-    public void setAluguel(List<Aluguel> aluguel) {
-        this.aluguel = aluguel;
-    }
 }

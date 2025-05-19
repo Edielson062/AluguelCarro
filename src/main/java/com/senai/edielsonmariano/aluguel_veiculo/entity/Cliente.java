@@ -19,10 +19,6 @@ public class Cliente {
     @Column(name = "cpf",nullable = false,length = 11)
     private String cpf;
 
-    @OneToMany
-    @JsonIgnore
-    private List<Aluguel> aluguels;
-
     public Cliente() {
     }
 
@@ -54,13 +50,5 @@ public class Cliente {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-
-    public List<Aluguel> getAluguels() {
-        return aluguels;
-    }
-
-    public void setAluguels(List<Aluguel> aluguels) {
-        this.aluguels = aluguels;
     }
 }

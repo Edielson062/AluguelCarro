@@ -23,6 +23,16 @@ public class AluguelController {
         return aluguelService.buscarAluguel(id);
     }
 
+    @GetMapping("/cliente/{id}")
+    public List<Aluguel> buscaAluguelCliente(@PathVariable int id) {
+        return aluguelService.buscarAluguelPorCliente(id);
+    }
+
+    @GetMapping("/veiculo/{id}")
+    public List<Aluguel> buscaAluguelVeiculo(@PathVariable int id) {
+        return aluguelService.buscarAluguelPorVeiculo(id);
+    }
+
     @PostMapping
     public Aluguel cadastrarAluguel(@RequestBody Aluguel aluguel) {
         return aluguelService.adcionarAluguel(aluguel);
