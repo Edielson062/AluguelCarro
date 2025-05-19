@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("aluguel")
+@CrossOrigin("*")
 public class AluguelController {
     @Autowired
     private AluguelService aluguelService;
